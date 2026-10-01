@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+
+/* Variables */
+:root {
+    --blue-500: hsl(215, 51%, 70%);
+    --cyan-400: hsl(178, 100%, 50%);
+    --blue-950: hsl(217, 54%, 11%);
+    --blue-900: hsl(216, 50%, 16%);
+    --blue-800: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue-950);
+}
+
+#container {
+    display: block;
+}
+
+article {
+    background-color: var(--blue-900);
+    width: 400px;
+    margin: 40px;
+    box-shadow: 1px -1px 16px 0px #0a0a0a;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.nft-img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 20px;
+    color: var(--blue-500);
+}
+
+.data-nft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price, .time {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 5px;
+}
+
+strong {
+    color: var(--cyan-400);
+}
+
+.time {
+    color: var(--blue-500);
+}
+
+hr {
+    border: 1px solid var(--blue-800);
+    margin-bottom: 20px;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.avatar img {
+    width: 70px;
+}
+
+.avatar p {
+    color: var(--white);
+}
+
+
+/* Footer */
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
