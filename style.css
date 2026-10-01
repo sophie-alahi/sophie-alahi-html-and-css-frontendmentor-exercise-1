@@ -38,10 +38,48 @@ article {
     padding: 30px;
 }
 
+.picture-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden; /* funciona como una cliping mask */
+    margin-bottom: 20px;
+}
+
 .nft-img {
     width: 100%;
-    border-radius: 20px;
-    margin-bottom: 20px;
+}
+
+.active-view-bg, .active-view-img {
+     opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active-view-bg {
+    background-color: var(--cyan-400);
+}
+
+.active-view-img {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.picture-container:hover .active-view-bg {
+    opacity: .3;
+    cursor: pointer;
+}
+.picture-container:hover .active-view-img{
+    opacity: 1;
+    cursor: pointer;
 }
 
 h2 {
@@ -59,19 +97,25 @@ h2 {
     justify-content: space-between;
 }
 
-.price, .time {
+.price,
+.time {
     display: flex;
     align-items: center;
     margin: 20px 0;
     gap: 5px;
 }
 
-strong {
+.price strong {
     color: var(--cyan-400);
 }
 
 .time {
     color: var(--blue-500);
+}
+
+.avatar strong:hover {
+    color: var(--cyan-400);
+    cursor: pointer;
 }
 
 hr {
@@ -89,12 +133,17 @@ hr {
     width: 70px;
 }
 
+
 .avatar p {
     color: var(--white);
 }
 
 
-/* Footer */
+
+
+
+
+/* Footer
 .attribution {
     font-size: 0.6875rem;
     text-align: center;
@@ -103,3 +152,4 @@ hr {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+     */
